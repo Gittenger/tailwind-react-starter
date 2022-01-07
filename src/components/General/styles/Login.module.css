@@ -1,0 +1,23 @@
+.parent {
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	textarea:-webkit-autofill,
+	textarea:-webkit-autofill:hover,
+	select:-webkit-autofill,
+	select:-webkit-autofill:hover {
+		/* -webkit-text-fill-color: theme('colors.green.700'); */
+		-webkit-box-shadow: 0 0 0px 1000px theme('colors.blue.100') inset;
+		background-color: transparent !important;
+		transition: background-color 5000s ease-in-out 0s, border 0.3s,
+			box-shadow 0.3s;
+	}
+
+	input:-webkit-autofill:focus,
+	textarea:-webkit-autofill:focus,
+	select:-webkit-autofill:focus {
+		background-color: transparent !important;
+		-webkit-box-shadow: 0 0 0px 1000px theme('colors.blue.100') inset !important;
+		transition: background-color 5000s ease-in-out 0s, border 0.3s,
+			box-shadow 0.3s;
+	}
+}
