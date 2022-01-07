@@ -22,6 +22,14 @@ I've imported a custom font for demonstration purposes. Check the `index.css` fi
 
 Similarly, you can extend any option in Tailwind and add your own custom class names. In this project I extended `"borderWidth"` for demonstration. See the [Tailwind docs](https://tailwindcss.com/docs/installation) for more information.
 
+#### _Variants_
+
+I've included a few sample variants in the configuration to give an idea of what's easily possible with Tailwind. For example, to be able to use the 'visited' state variant with text colors, I added the `visited` variant to the `textColor` option in the config.
+
+#### _Plugins_
+
+By default I've included the Tailwind 'forms' plugin, as it's very useful if you end up wanting to add customiztion to form inputs. Unfortunately, oftentimes I've found this to be very difficult using Tailwind, but this plugin solved most issues that I've encountered with it, which is why I'm including it here as a strong recommendation if you're using this Tailwind.
+
 #### _Tailwind components_
 
 If you wish to extract a Tailwind component using just Tailwind, follow the method in the `index.css` file where components have been extracted using the `@apply` directive. This can be useful for setting high level styles, although in this project it's primarily optimal to use React for extracting most components.
