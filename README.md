@@ -1,43 +1,46 @@
-# Getting Started with Create React App
+# Starter React App with Tailwind CSS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This starter template was set up by me, [John Pittenger](https://github.com/Gittenger/tailwind-react-starter). It uses the [Create React App](https://github.com/facebook/create-react-app) template as a base.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+This template is designed for you to hit the ground running and begin rapidly developing components harnessing both the powers of React as well as Tailwind in order to maximize your productivity.
 
-### `npm start`
+## `Tailwind CSS`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Featured is a basic set-up of Tailwind, with a couple tweaks to jump start you into customizing it to fit your needs.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### _Dark Mode_
 
-### `npm test`
+I've set the Tailwind "dark" mode to be set via a class designation. In this case if you wish to use dark mode, simply assign the class "dark" to the HTML tag in the top level `index.html` file in the 'public' directory.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### _Fonts_
 
-### `npm run build`
+I've imported a custom font for demonstration purposes. Check the `index.css` file for details. Using the same technique, you can upload as many custom fonts as you wish, then easily refer to them using the class designation `class="font-myClassName"`. You can set this class name to be whatever you like by extending the `fontFamily` option in `tailwind.config.js`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### _Other extensions_
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Similarly, you can extend any option in Tailwind and add your own custom class names. In this project I extended `"borderWidth"` for demonstration. See the [Tailwind docs](https://tailwindcss.com/docs/installation) for more information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### _Tailwind components_
 
-### `npm run eject`
+If you wish to extract a Tailwind component using just Tailwind, follow the method in the `index.css` file where components have been extracted using the `@apply` directive. This can be useful for setting high level styles, although in this project it's primarily optimal to use React for extracting most components.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## `React`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### _Images_
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+There is an image index started for you so you can easily import images, SVG's, and other icons into your React project and use them throughout your code with straightforward imports.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### _Pages_
+
+The pagination of this project is set up using React Context and a simple system whereby you can add pages using the `pages-index.js` and the `PageComponent.jsx` files. When you add a new `"Page Content"` file to the index, it will automatically be built as a page using the `Layout` component. Then, simply add it to the `Routes.jsx` file and you can easily route to that page based on your designation.
+
+## **_IMPORTANT_**
+
+### `.prettierrc`
+
+The option `quoteProps` must be set to `preserve` if using Prettier. This is because the Tailwind configuration file requires quoted properties for option selection, and by default Prettier will remove these upon formatting.
 
 ## Learn More
 
@@ -45,26 +48,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Check out the [Tailwind documentation here](https://tailwindcss.com/docs/installation).
